@@ -65,6 +65,7 @@ public class Encrypt extends AppCompatActivity {
         Intent encry = new Intent(this, EncryptedMessage.class);
         encry.putExtra("message",crypt_64);
         startActivity(encry);
+        int i = 0;
     }
 
     private byte[] RSA_2048_ENCRYPT(byte[] plaintext, PublicKey pub)
