@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // initialization
         keyGenerated = false;
-        
+
+        String test = "";
     }
 
     public void genPair(View notUsed)
