@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asymmetriccrypto.MainActivity">
+
+    <Button
+        android:layout_width="@dimen/home_buttons_widths"
+        android:layout_height="wrap_content"
+        android:text="Generate Key Pair"
+        android:onClick="genPair"
+        />
+    <Button
+        android:layout_width="@dimen/home_buttons_widths"
+        android:layout_height="wrap_content"
+        android:id ="@+id/encrypt_button"
+        android:text="Encrypt"
+        android:clickable="false"
+        android:alpha=".5"
+        android:onClick="beginEncryAct"
+        />
+    <Button
+        android:layout_width="@dimen/home_buttons_widths"
+        android:layout_height="wrap_content"
+        android:id ="@+id/decrypt_button"
+        android:text="Decrypt"
+        android:clickable="false"
+        android:alpha=".5"
+        android:onClick="beginDecryAcy"
+        />
+</LinearLayout>
